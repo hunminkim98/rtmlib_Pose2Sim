@@ -27,8 +27,8 @@ def draw_skeleton(img,
             skeleton = 'openpose18'
         elif num_keypoints == 134:
             skeleton = 'openpose134'
-        elif num_keypoints == 26:
-            skeleton = 'halpe26'
+        elif num_keypoints == 26 or num_keypoints == 27:
+            raise NotImplementedError("Halpe26 already has a neck keypoint. Please set openpose_skeleton=False.")
         else:
             raise NotImplementedError
     else:
