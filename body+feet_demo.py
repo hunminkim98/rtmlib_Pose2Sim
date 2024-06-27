@@ -3,7 +3,7 @@ import cv2
 from rtmlib import Body_and_Feet, PoseTracker, draw_skeleton
 
 device = 'cpu'
-backend = 'onnxruntime'  # opencv, onnxruntime, openvino
+backend = 'openvino'  # opencv, onnxruntime, openvino
 
 cap = cv2.VideoCapture(r'C:\Users\5W555A\Desktop\Pose2Sim_RTM\pose2sim-w-Marker-Augmenter-Sync\Pose2Sim\S00_Demo_BatchSession\S00_P00_SingleParticipant\S00_P00_T01_BalancingTrial\pose\cam03_pose.avi')  # Video file path
 

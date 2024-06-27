@@ -114,7 +114,13 @@ if __name__ == '__main__':
           url='https://github.com/Tau-J/rtmlib',
           license='Apache License 2.0',
           python_requires='>=3.7',
-          install_requires=parse_requirements('requirements/runtime.txt'),
+          install_requires=[
+            'numpy',
+            'onnxruntime',
+            'opencv-contrib-python',
+            'opencv-python',
+            'tqdm',
+          ],
           extras_require={
               'all': parse_requirements('requirements.txt'),
               'optional': parse_requirements('requirements/optional.txt'),
